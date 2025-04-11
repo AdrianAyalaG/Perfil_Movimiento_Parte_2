@@ -49,9 +49,21 @@ Figura 3. Perfil de Aceleración
      <img src="Pos_J.png" alt="Jec" width="500">
 Figura 4. Perfil de Jeck
 
-Con
-Se suavisa el perfil aceleración.
-Protección a los actuadores y mecanismos. Ya que al tener una aceleración más sueva el Jerk es mucho más suave, evitando movimientos bruscos. Cabe mencionar que el perfil a usar depende del movimiento a realizar.
+
+Se encuentra 2 clases de curvas en S:
+1. Perfiles S pura: 2 modelos de segundo orden conectados entre ellos; este perfil es mucho más suave.
+2. Perfiles en S: Si 2 modelos de segundo orden y un modelo de primer orden en la mitad.
+
+$ Modelo matemático
+
+
+
+
+
+
+
+# Conclusiones
+- Implementar un perfil de movimiento con curva en S permite una transición más suave entre etapas, reduciendo las vibraciones, mejorando la precisión del posicionamiento y alargando la vida útil de los componentes mecánicos. Aunque su implementación puede requerir mayor complejidad.
 
 
 

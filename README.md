@@ -4,8 +4,8 @@
 Con el objetivo de recordar lo visto en la clase pasada, se propone el siguiente ejemplo.
 ## 💡Ejemplo 1:
 
-![Figura de prueba](Ej_1.png)
 
+<img src="Ej_1.png" alt="Ejemplo" width="200">
 Figura 1. Figura de prueba
 
 

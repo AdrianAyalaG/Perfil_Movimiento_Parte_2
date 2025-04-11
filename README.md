@@ -132,14 +132,23 @@ $$C_{3} = v_{m} + at_{a} - 2at_{a}$$
 
 $$C_{3} = v_{m} - at_{a}$$
 
+Ahora se resuelve teniendo en cuenta los coeficientes:
+
+$$v_A(t) = \frac{2v_m}{t_a^2} t^2 \quad\quad 
+v_B(t) = v_m - \frac{2v_m}{t_a^2}(t_a - t)^2$$
+
+$$s(t) = \int_{0}^{15} \frac{2 \cdot 32}{30^2} t^2 \, dt + \int_{15}^{30} 32 - \frac{2 \cdot 32}{30^2}(30 - t)^2 \, dt$$
+
+$$s(t) = \int_{0}^{15} \frac{64}{900} t^2 \, dt + \int_{15}^{30} 32 - \frac{64}{900}(30^2 - 60t + t^2) \, dt$$
 
 
+Obtener la posición (axis) transcurridos 100 ms a partir del perfil de velocidad:
 
+$$s_{OB}(t) = \left[ 0.023t^3 \right]_0^{15} + \left[ 32t + 0.071 \left(900t - \frac{60}{2}t^2 + \frac{t^3}{3} \right) \right]_{15}^{30}$$
 
+$$s_{OB}(t) = 77.62 + 480 - 64.12 = 493.49 \text{ cts}$$
 
-
-
-
+$$s_{OC}(t) = 493.49 + 32 \cdot 70 = 2733.49 \text{ cts}$$
 
 
 

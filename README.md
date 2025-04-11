@@ -102,19 +102,35 @@ Ahora se escriben las ecuaciones para hallar los valores de los coeficientes:
 $$v(t) = C_{1}(t)^2 + C_{2}(t) + C_{3}$$
 $$a(t) = 2C_{1}(t) + C_{2}$$
 
-1. 
-$$a(t_{a}) = 2C_{1}(t_{a}) + C_{2} $$
-[Image 388.jpg]
-[Image 386.jpg]
+1. $$a(t_{a}) = 2C_{1}(t_{a}) + C_{2} = 0$$
+2. $$a(\frac{t_{a}}{2}) = C_{1}(t_{a}) + C_{2} = a$$
+ 
+ Despeje de los coeficientes:
 
-[Image 387.jpg]
+- Coeficiente $$C_{1}$$:
+  
+$$C_{1}t_{a} + a - C_{1}t_{a} = 0$$
+
+$$C_{1}(2t_{a} - t_{a}) = -a$$
+
+$$C_{1} = \frac{-a}{t_{a}}$$
 
 
+- Coeficiente $$C_{2}$$:
+  
+$$\frac{a}{\color{Green} {t_{a}}}{\color{Green} {t_{a}}} + C_{a} = a $$
+  
+$$C_{2} = 2a$$
 
+- Coeficiente $$C_{3}$$:
 
+$$\frac{-a}{t_{a}}(t_{a})^2 + 2at_{a} + C_{3} = v_{m}$$
 
+$$-at_{a} + 2at_{a} + C_{3} = v_{m}$$
 
+$$C_{3} = v_{m} + at_{a} - 2at_{a}$$
 
+$$C_{3} = v_{m} - at_{a}$$
 
 # Conclusiones
 - Implementar un perfil de movimiento con curva en S permite una transición más suave entre etapas, reduciendo las vibraciones, mejorando la precisión del posicionamiento y alargando la vida útil de los componentes mecánicos. Aunque su implementación puede requerir mayor complejidad.

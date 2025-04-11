@@ -91,7 +91,7 @@ $$a(\frac{t_{a}}{2}) = a$$
 Se evalúa el polinomio para hallar C1, C2 y C3
 
 $$v(0) = C_{1}(0)^2 + C_{2}(0) + C_{3} = 0$$
-$$C_{3} = 0$$
+$$ C_{3} = 0$$
 
 $$v(\frac{t_{a}}{2}) = \frac{C_{1}t_{a}^2}{4} = \frac{v_{m}}{2}$$
 $$C1 = \frac{2v_{m}}{t_{a}^2}$$
@@ -113,14 +113,14 @@ $$C_{1}t_{a} + a - C_{1}t_{a} = 0$$
 
 $$C_{1}(2t_{a} - t_{a}) = -a$$
 
-$$C_{1} = \frac{-a}{t_{a}}$$
+$${\color{Red}C_{1} = \frac{-a}{t_{a}}}$$
 
 
 - Coeficiente $$C_{2}$$:
   
 $$\frac{a}{\color{Green} {t_{a}}}{\color{Green} {t_{a}}} + C_{a} = a $$
   
-$$C_{2} = 2a$$
+$${\color{Red}C_{2} = 2a}$$
 
 - Coeficiente $$C_{3}$$:
 
@@ -130,7 +130,7 @@ $$-at_{a} + 2at_{a} + C_{3} = v_{m}$$
 
 $$C_{3} = v_{m} + at_{a} - 2at_{a}$$
 
-$$C_{3} = v_{m} - at_{a}$$
+$${\color{Red}C_{3} = v_{m} - at_{a}}$$
 
 Ahora se resuelve teniendo en cuenta los coeficientes:
 

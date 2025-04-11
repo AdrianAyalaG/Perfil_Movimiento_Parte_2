@@ -168,8 +168,37 @@ Se debe tener en cuenta los siguientes movimientos:
 - Se puede usar una interpolación lineal o circular, dependiendo de la trayectoria deseada
 
 
+## 💡Ejemplo 3
+
+Considere la máquina de la figura. Si ambos ejes se mueven a una velocidad de 4 cm/s usando un perfil de velocidad trapezoidal con 𝑡𝑎 = 0,2 s, ¿Cuánto tiempo le tomará a cada eje completar el movimiento?
+
+$$t_{a} = 0.2s,      L_{x} = 16cm,  v_{x} = 4 cm/s$$
+$$L_{y} = 12cm,   v_{y} = 4 cm/s$$
+
+$$tx_{m} = \frac{L_{x}}{v_{m}} - t_{a}$$
+
+$$tx_{m} = \frac{16cm}{4 cm/s} - 0.2 = 3.8s$$
+
+$$ {\color{Green} tx_{total} = 3.8 + 2t_{a} = 4.2s} $$
 
 
+
+$$ty_{m} = \frac{L_{y}}{v_{m}} - t_{a}$$
+
+$$ty_{m} = \frac{12cm}{4 cm/s} - 0.2 = 2.8s$$
+
+$${\color{Green} ty_{total} = 2.8 + 2t_{a} = 3.2s} $$
+
+
+## 💡Ejemplo 4
+Para el ejemplo anterior, ahora se debería tomar como referencia el perfil de velocidad del eje (axis) que tomará mas tiempo e interpolar para el otro eje (axis), para que ambos terminen al mismo tiempo.
+
+$$v_{x} = 4 cm/s,  t_{a} = 0.2s,   v_{y} = ?$$
+
+$$t_{m} = \frac{L_{y}}{t_{m} + t_{a}} = \frac{12cm}{3.8 + 0.2} = 3 cm/s$$
+
+$$$$
+$$ {\color{Green} v_{y} = 3 cm/s}$$
 
 
 # Conclusiones

@@ -30,6 +30,9 @@ La curva en S se utiliza en perfiles de movimiento para suavizar la transición 
 - Perfil de Posición:
   - En ambos casos, al integrar el perfil de velocidad se obtiene una función de tercer orden para la posición. Sin embargo, en el perfil con curva en S, el crecimiento de a posición es más progresivo y continuo, sin cambios bruscos de pendiente. Esto se traduce en un desplazamiento más fluido y preciso.
 
+<img src="Pos_S.png" alt="Ejemplo" width="300">
+Figura 1. Perfil de Posición
+
 - Perfil de Aceleración:
   - Perfil Lineal: La aceleración se presenta en forma de escalones o saltos repentinos. En cada etapa del movimientp (aceleración constante, velocidad constante, desaceleración), la aceleración cambia bruscamente de valor, lo que puede generar impactos al sistema.
     IMAGEN DE ESE PERFIL

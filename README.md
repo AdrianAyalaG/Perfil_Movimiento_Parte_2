@@ -164,7 +164,8 @@ Se debe tener en cuenta los siguientes movimientos:
 - Ambos ejes se activan al mismo tiempo, pero sin una sincronización total de velocidad o trayectoria.
 
 ### Movimiento Interpolado:
-
+- Ambos ejes son controlados para iniciar y terminar exactamente al mismo tiempo, manteniendo una trayectoria precisa, como una línea recta en el espacio cartesiano.
+- Se puede usar una interpolación lineal o circular, dependiendo de la trayectoria deseada
 
 
 
@@ -173,7 +174,7 @@ Se debe tener en cuenta los siguientes movimientos:
 
 # Conclusiones
 - Implementar un perfil de movimiento con curva en S permite una transición más suave entre etapas, reduciendo las vibraciones, mejorando la precisión del posicionamiento y alargando la vida útil de los componentes mecánicos. Aunque su implementación puede requerir mayor complejidad.
-
+- La planificación del perfil de velocidad y aceleración es crucial para evitar vibraciones o errores de posicionamiento.
 
 
 

@@ -132,6 +132,23 @@ $$C_{3} = v_{m} + at_{a} - 2at_{a}$$
 
 $$C_{3} = v_{m} - at_{a}$$
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Conclusiones
 - Implementar un perfil de movimiento con curva en S permite una transición más suave entre etapas, reduciendo las vibraciones, mejorando la precisión del posicionamiento y alargando la vida útil de los componentes mecánicos. Aunque su implementación puede requerir mayor complejidad.
 

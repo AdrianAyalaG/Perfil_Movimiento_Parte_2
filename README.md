@@ -144,11 +144,15 @@ $$s(t) = \int_{0}^{15} \frac{64}{900} t^2 \, dt + \int_{15}^{30} 32 - \frac{64}{
 
 Obtener la posición (axis) transcurridos 100 ms a partir del perfil de velocidad:
 
-$$s_{OB}(t) = \left[ 0.023t^3 \right]_0^{15} + \left[ 32t + 0.071 \left(900t - \frac{60}{2}t^2 + \frac{t^3}{3} \right) \right]_{15}^{30}$$
+$$s_OB(t) = [0.023 * t^3] from t=0 to t=15 + [32 * t + 0.071 * (900 * t - (60 / 2) * t^2 + (t^3) / 3)] from t=15 to t=30$$
 
 $$s_{OB}(t) = 77.62 + 480 - 64.12 = 493.49 \text{ cts}$$
 
 $$s_{OC}(t) = 493.49 + 32 \cdot 70 = 2733.49 \text{ cts}$$
+
+
+# Movimiento Multieje
+
 
 
 

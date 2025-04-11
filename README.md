@@ -144,7 +144,7 @@ $$s(t) = \int_{0}^{15} \frac{64}{900} t^2 \, dt + \int_{15}^{30} 32 - \frac{64}{
 
 Obtener la posición (axis) transcurridos 100 ms a partir del perfil de velocidad:
 
-$$s_OB(t) = [0.023 * t^3] from t=0 to t=15 + [32 * t + 0.071 * (900 * t - (60 / 2) * t^2 + (t^3) / 3)] from t=15 to t=30$$
+$$s_OB(t) = [0.023 * t^3]from t=0 to t=15 + [32 * t + 0.071 * (900 * t - (60 / 2) * t^2 + (t^3) / 3)] from t=15 to t=30$$
 
 $$s_{OB}(t) = 77.62 + 480 - 64.12 = 493.49 \text{ cts}$$
 
@@ -153,8 +153,17 @@ $$s_{OC}(t) = 493.49 + 32 \cdot 70 = 2733.49 \text{ cts}$$
 
 # Movimiento Multieje
 
+Los sistemas que requieren el control simultáneo de múltiples ejes como manipuladores, los cuales utilizan perfiles de movimiento multi-eje. Este tipo de perfiles se basan en la coordinación precisa entre dos o más ejes (axis) para lograr un trayecto o acción específica de forma sincronizada.
 
+Se debe tener en cuenta los siguientes movimientos:
 
+### Movimiento Secuencial:
+- Mueve un eje primero, seguido del otro. Es una forma simple pero lenta en dado caso de requerir una precisión conjunta.
+
+### Movimiento Simultáneo:
+- Ambos ejes se activan al mismo tiempo, pero sin una sincronización total de velocidad o trayectoria.
+
+### Movimiento Interpolado:
 
 
 

@@ -54,7 +54,61 @@ Se encuentra 2 clases de curvas en S:
 1. Perfiles S pura: 2 modelos de segundo orden conectados entre ellos; este perfil es mucho más suave.
 2. Perfiles en S: Si 2 modelos de segundo orden y un modelo de primer orden en la mitad.
 
-$ Modelo matemático
+# Modelo matemático
+
+Cada segmento curvo del perfil de velocidad respecto al tiempo (t) se modela mediante un polinomio de segundo orden, el cual permite una transición gradual entre diferentes niveles de velocidad. La expresión matemática del perfil de velocidad es:
+
+$$v(t) = C_{1}(t)^2 + C_{2}(t) + C_{3}$$
+
+$$C_{1}, C_{2} y C_{3}$$ son coeficientes determinados a partir de las condiciones de frontera, es decir, las condiciones iniciales y finales del movimiento (como la velocidad, aceleración o posición en instantes específicos).
+
+Este tipo de polinomio permite definir un perfil de aceleración continua, lo cual es fundamental para evitar esfuerzos mecánicos excesivos y para mejorar la eficiencia energética del sistema.
+
+El perfil curva S se caracteriza por tener una aceleración que varía de manera continua, iniciando desde cero, alcanzando un valor máximo, y luego regresando nuevamente a cero, lo cual evita los cambios abruptos que se presentan en perfiles trapezoidales.
+
+A continuación se evalúan las condiciones de frontera 
+
+## 💡Ejemplo  2
+
+Curva A:
+En el tiempo igual a 0 (cero), la velocidad vale 0 y al derivar la velocidad para hallar la aceleración se determina que también es 0.
+El tiempo final es t/2, por ende, debe llevar la mitad de la velocidad.
+
+Fronteras
+
+$$0 < t < \frac{t_{a}}{2}$$
+
+Límites iniciales 
+
+$$v(0) = 0$$
+$$a(0) = \frac{dv}{dt} = 0$$
+
+Límites finales
+
+$$v(\frac{t_{a}}{2}) = \frac{v_{m}}{2}$$
+$$a(\frac{t_{a}}{2}) = a$$
+
+Se evalúa el polinomio para hallar C1, C2 y C3
+
+$$v(0) = C_{1}(0)^2 + C_{2}(0) + C_{3} = 0$$
+$$C_{3} = 0$$
+
+$$v(\frac{t_{a}}{2}) = \frac{C_{1}t_{a}^2}{4} = \frac{v_{m}}{2}$$
+$$C1 = \frac{2v_{m}}{t_{a}^2}$$
+$$v(t) = \frac{2vm}{t_{a}^2}t^2$$
+
+Ahora se escriben las ecuaciones para hallar los valores de los coeficientes:
+
+$$v(t) = C_{1}(t)^2 + C_{2}(t) + C_{3}$$
+$$a(t) = 2C_{1}(t) + C_{2}$$
+
+1. 
+$$a(t_{a}) = 2C_{1}(t_{a}) + C_{2} $$
+[Image 388.jpg]
+[Image 386.jpg]
+
+[Image 387.jpg]
+
 
 
 

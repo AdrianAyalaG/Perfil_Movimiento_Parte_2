@@ -237,3 +237,5 @@ $${\color{Green} ty_{total} = 1.9 + 2t_{a} = 2.5s} $$
 - El uso de perfiles de movimiento optimizados, como la curva en S, combinado con controladores de movimiento avanzados, mejora significativamente el comportamiento dinámico de los sistemas mecánicos. Al lograr una aceleración progresiva y controlar con precisión los parámetros eléctricos del motor, se minimizan las vibraciones y se optimiza el rendimiento general. Esta sinergia entre perfilado de movimiento y control inteligente resulta fundamental para alcanzar altos niveles de precisión, eficiencia y confiabilidad en aplicaciones industriales y robóticas.
 
 # Referencias
+1.
+2. J. Neugebauer, "Perfiles de control de movimiento: bueno, mejor y óptimo," DigiKey, 24-mar-2021. [En línea]. Disponible en: https://www.digikey.com/es/blog/motion-control-profiles-good-better-and-best [Accedido: 01-abr-2025].

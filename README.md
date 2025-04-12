@@ -26,8 +26,11 @@ $$v_{max} = \frac{2_{S_{B}}}{t}$$
 $$a = \frac{2v_{max}}{t}$$
 
 
-# Perfil de velocidad curva en S
-La curva en S se utiliza en perfiles de movimiento para suavizar la transición entre las distintas fafes de desplazamiento, reduciendo así las vibraciones mecánicas y los esfuerzos sobre los componentes del sistema. A diferencia de los perfiles lineales, en los que los camibos de aceleración ocurren de forma repentina, la curva en S introduce una transición gradual que mejora significativamente el comportamiento dinámico del sistema.
+# Perfil curva en S
+La curva en S se utiliza en los perfiles de movimiento para suavizar la transición entre las distintas fases de desplazamiento, reduciendo así las vibraciones mecánicas y los esfuerzos sobre los componentes del sistema. A diferencia de los perfiles lineales, donde los cambios de aceleración ocurren de manera abrupta, la curva en S introduce una transición progresiva que mejora significativamente el comportamiento dinámico del sistema.
+
+Este tipo de perfil permite un cambio gradual en la aceleración, lo cual contribuye a minimizar o eliminar problemas como el rebasamiento. Como resultado, el sistema experimenta una notable reducción en las vibraciones mecánicas. Los puntos de aceleración mínima se encuentran al inicio y al final del período de aceleración, mientras que la aceleración máxima se alcanza en el punto medio. De esta manera, se obtiene un perfil de movimiento mucho más suave y eficiente.
+
 
 - Perfil de Posición:
   - En ambos casos, al integrar el perfil de velocidad se obtiene una función de tercer orden para la posición. Sin embargo, en el perfil con curva en S, el crecimiento de a posición es más progresivo y continuo, sin cambios bruscos de pendiente. Esto se traduce en un desplazamiento más fluido y preciso.

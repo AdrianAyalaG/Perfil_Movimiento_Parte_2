@@ -31,12 +31,15 @@ La curva en S se utiliza en los perfiles de movimiento para suavizar la transici
 
 Este tipo de perfil permite un cambio gradual en la aceleración, lo cual contribuye a minimizar o eliminar problemas como el rebasamiento. Como resultado, el sistema experimenta una notable reducción en las vibraciones mecánicas. Los puntos de aceleración mínima se encuentran al inicio y al final del período de aceleración, mientras que la aceleración máxima se alcanza en el punto medio. De esta manera, se obtiene un perfil de movimiento mucho más suave y eficiente.
 
+<img src="Curva_S.png" alt="Ejemplo" width="350">
+Figura 2. Perfil curva en S
+
 
 - Perfil de Posición:
   - En ambos casos, al integrar el perfil de velocidad se obtiene una función de tercer orden para la posición. Sin embargo, en el perfil con curva en S, el crecimiento de a posición es más progresivo y continuo, sin cambios bruscos de pendiente. Esto se traduce en un desplazamiento más fluido y preciso.
   
     <img src="Pos_S.png" alt="Pos" width="500">
-Figura 2. Perfil de Posición
+Figura 3. Perfil de Posición
 
 - Perfil de Aceleración:
   - Perfil Lineal: La aceleración se presenta en forma de escalones o saltos repentinos. En cada etapa del movimientp (aceleración constante, velocidad constante, desaceleración), la aceleración cambia bruscamente de valor, lo que puede generar impactos al sistema.
@@ -44,7 +47,7 @@ Figura 2. Perfil de Posición
   - Perfil Curva en S: La aceleración es continua y suave. Está compuesta por tres fases: Pendiente positiva (incrementa la aceleración), constante, y una pendiente negativa (disminuye la aceleración). Este comportamiento se representa mediante funciones cuadráticas (segund orden), lo que hace que al derivar para obtener el Jeck sea lineal.
   
     <img src="Pos_A.png" alt="Acel" width="500">
-Figura 3. Perfil de Aceleración
+Figura 4. Perfil de Aceleración
 
 
 - Perfil de Jeck: 
@@ -205,9 +208,9 @@ $$t_{m} = \frac{L_{y}}{t_{m} + t_{a}} = \frac{12cm}{3.8 + 0.2} = 3 cm/s$$
 $$ {\color{Green} v_{y} = 3 cm/s}$$
 
 
-# 📚 Ejercicio 2
+# 📚 Ejercicios
 
-Considere la máquina de la figura. Si ambos ejes se mueven a una velocidad de 8 cm/s usando un perfil de velocidad trapezoidal con 𝑡𝑎 = 0,6 s, ¿Cuánto tiempo le tomará a cada eje completar el movimiento?
+1. Considere la máquina de la figura. Si ambos ejes se mueven a una velocidad de 8 cm/s usando un perfil de velocidad trapezoidal con 𝑡𝑎 = 0,6 s, ¿Cuánto tiempo le tomará a cada eje completar el movimiento?
 
 $$t_{a} = 0.6s,      L_{x} = 45cm,  v_{x} = 8 cm/s$$
 $$L_{y} = 20cm,   v_{y} = 8 cm/s$$
@@ -229,8 +232,8 @@ $${\color{Green} ty_{total} = 1.9 + 2t_{a} = 2.5s} $$
 
 
 # Conclusiones
-- Implementar un perfil de movimiento con curva en S permite una transición más suave entre etapas, reduciendo las vibraciones, mejorando la precisión del posicionamiento y alargando la vida útil de los componentes mecánicos. Aunque su implementación puede requerir mayor complejidad a nivel de calculos, por ende, más gasto computacional.
-- 
+- La implementación de un perfil de movimiento con curva en S permite transiciones más suaves entre etapas, lo que reduce las vibraciones, mejora la precisión del posicionamiento y prolonga la vida útil de los componentes mecánicos. No obstante, su aplicación implica una mayor complejidad en los cálculos, lo que se traduce en un mayor consumo de recursos computacionales.
 
+- El uso de perfiles de movimiento optimizados, como la curva en S, combinado con controladores de movimiento avanzados, mejora significativamente el comportamiento dinámico de los sistemas mecánicos. Al lograr una aceleración progresiva y controlar con precisión los parámetros eléctricos del motor, se minimizan las vibraciones y se optimiza el rendimiento general. Esta sinergia entre perfilado de movimiento y control inteligente resulta fundamental para alcanzar altos niveles de precisión, eficiencia y confiabilidad en aplicaciones industriales y robóticas.
 
 # Referencias

@@ -237,6 +237,41 @@ $$ty_{m} = \frac{20cm}{8 cm/s} - 0.6 = 1.9s$$
 $${\color{Green} ty_{total} = 1.9 + 2t_{a} = 2.5s} $$
 
 
+2. A partir del perfil de velocidad mostrado, obtenga la posición recorrida por el eje (axis) transcurridos 120 ms. Los datos conocidos son: Tiempo total: 120 ms, velocidad máxima 40 cm/s y tiempo de aceleración de 60ms.
+
+Fase A (Aceleración)
+Frontera:
+$$0 \le t \le t_{a}$$
+
+$$v_{a}(t) = \frac{2v_{m}}{t_{a}^2}t^2$$
+
+$$s_{a}t = \int_{0}^{t_{a}}t_{a}^2dt = \frac{2v_{m}}{t_{a}^2} * \frac{t_{a}^3}{3} = \frac{2v_{m}t_{a}}{3}$$
+
+
+Fase B - Desaceleración
+
+$$v_{b}(t) = v_{m} - \frac{2v_{m}}{t_{a}^2}(t - t_{a})^2$$
+
+Para: $$t_{a} \le t \le 2t_{a}$$
+
+$$s_{b}t = \int_{2t_{a}}^{t_{a}^2} \left[ v_{m} -  \frac{2v_{m}}{t_{a}^2}(t - t_{a})^2 \right]dt = \frac{2v_{m}t_{a}}{3}$$
+
+$$v_{m} = 40 cm/s$$
+$$t_{a} = 0.06s$$
+
+Fase A:
+
+$$s_{a} = \frac{2 * 40 * 0.06}{3} = 1.6cm$$
+
+Fase B:
+
+$$s_{a} = \frac{2 * 40 * 0.06}{3} = 1.6cm$$
+
+Respuesta:
+
+$$s_{total} = 1.6 + 1.6 = 3.2cm$$
+
+
 
 # Conclusiones
 - La implementación de un perfil de movimiento con curva en S permite transiciones más suaves entre etapas, lo que reduce las vibraciones, mejora la precisión del posicionamiento y prolonga la vida útil de los componentes mecánicos. No obstante, su aplicación implica una mayor complejidad en los cálculos, lo que se traduce en un mayor consumo de recursos computacionales.

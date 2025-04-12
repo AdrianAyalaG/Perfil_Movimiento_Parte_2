@@ -1,3 +1,5 @@
+
+# 
 27 / 04 / 2025
 # Perfil de Movimiento - Parte 2 
 
@@ -197,17 +199,35 @@ $$v_{x} = 4 cm/s,  t_{a} = 0.2s,   v_{y} = ?$$
 
 $$t_{m} = \frac{L_{y}}{t_{m} + t_{a}} = \frac{12cm}{3.8 + 0.2} = 3 cm/s$$
 
-$$$$
 $$ {\color{Green} v_{y} = 3 cm/s}$$
 
 
+# 📚 Ejercicio 2
+
+Considere la máquina de la figura. Si ambos ejes se mueven a una velocidad de 8 cm/s usando un perfil de velocidad trapezoidal con 𝑡𝑎 = 0,6 s, ¿Cuánto tiempo le tomará a cada eje completar el movimiento?
+
+$$t_{a} = 0.6s,      L_{x} = 45cm,  v_{x} = 8 cm/s$$
+$$L_{y} = 20cm,   v_{y} = 8 cm/s$$
+
+$$tx_{m} = \frac{L_{x}}{v_{m}} - t_{a}$$
+
+$$tx_{m} = \frac{45cm}{8 cm/s} - 0.6 = 5.025s$$
+
+$$ {\color{Green} tx_{total} = 5.025 + 2t_{a} = 5.625s} $$
+
+
+
+$$ty_{m} = \frac{L_{y}}{v_{m}} - t_{a}$$
+
+$$ty_{m} = \frac{20cm}{8 cm/s} - 0.6 = 1.9s$$
+
+$${\color{Green} ty_{total} = 1.9 + 2t_{a} = 2.5s} $$
+
+
+
 # Conclusiones
-- Implementar un perfil de movimiento con curva en S permite una transición más suave entre etapas, reduciendo las vibraciones, mejorando la precisión del posicionamiento y alargando la vida útil de los componentes mecánicos. Aunque su implementación puede requerir mayor complejidad.
-- La planificación del perfil de velocidad y aceleración es crucial para evitar vibraciones o errores de posicionamiento.
+- Implementar un perfil de movimiento con curva en S permite una transición más suave entre etapas, reduciendo las vibraciones, mejorando la precisión del posicionamiento y alargando la vida útil de los componentes mecánicos. Aunque su implementación puede requerir mayor complejidad a nivel de calculos, por ende, más gasto computacional.
+- 
 
 
-
-
-
-
-
+# Referencias

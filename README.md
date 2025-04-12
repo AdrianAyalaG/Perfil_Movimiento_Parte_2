@@ -60,7 +60,7 @@ Figura 4. Perfil de Aceleración
     - Perfil Curva en S: Se observa una transición continua con cambios suaves.
     
      <img src="Pos_J.png" alt="Jec" width="500">
-Figura 4. Perfil de Jeck
+Figura 5. Perfil de Jeck
 
 
 Se encuentra 2 clases de curvas en S:

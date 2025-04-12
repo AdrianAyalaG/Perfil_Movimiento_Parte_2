@@ -244,7 +244,8 @@ $${\color{Green} ty_{total} = 1.9 + 2t_{a} = 2.5s} $$
 - El uso de perfiles de movimiento optimizados, como la curva en S, combinado con controladores de movimiento avanzados, mejora significativamente el comportamiento dinámico de los sistemas mecánicos. Al lograr una aceleración progresiva y controlar con precisión los parámetros eléctricos del motor, se minimizan las vibraciones y se optimiza el rendimiento general. Esta sinergia entre perfilado de movimiento y control inteligente resulta fundamental para alcanzar altos niveles de precisión, eficiencia y confiabilidad en aplicaciones industriales y robóticas.
 
 - El perfil trapezoidal es más sencillo y eficiente en términos de cálculo, el perfil curva en S es superior cuando se busca optimizar el comportamiento dinámico del sistema, mejorar la precisión y aumentar la durabilidad de los componentes. La elección entre ambos perfiles dependerá de las necesidades específicas de la aplicación, como la complejidad del sistema, los requisitos de precisión y las limitaciones computacionales.
--  
+
+  
 # Referencias
-1.
+1. "Login aulas 2025”, Edu.co. [En línea]. Disponible en: https://aulas.ecci.edu.co/mod/resource/view.php?id=217529&forceview=1. [Consultado: 01-abr-2025].
 2. J. Neugebauer, "Perfiles de control de movimiento: bueno, mejor y óptimo," DigiKey, 24-mar-2021. [En línea]. Disponible en: https://www.digikey.com/es/blog/motion-control-profiles-good-better-and-best [Accedido: 01-abr-2025].

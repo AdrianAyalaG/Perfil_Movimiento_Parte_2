@@ -36,23 +36,28 @@ Figura 2. Perfil curva en S
 
 
 - Perfil de Posición:
-  - En ambos casos, al integrar el perfil de velocidad se obtiene una función de tercer orden para la posición. Sin embargo, en el perfil con curva en S, el crecimiento de a posición es más progresivo y continuo, sin cambios bruscos de pendiente. Esto se traduce en un desplazamiento más fluido y preciso.
+  - En ambos casos, al integrar el perfil de velocidad se obtiene una función de tercer orden para la posición. En el perfil con curva en S, el crecimiento de la posición es más progresivo y continuo, sin cambios bruscos en la pendiente. Esto se traduce en un desplazamiento más fluido y preciso. El perfil de posición en una curva en S se describe cómo varía la ubicación del sistema a lo largo del tiempo, desde un punto inicial hasta uno final. A diferencia de perfiles más simples, como el trapezoidal, la curva en S proporciona una trayectoria suave y continua, evitando transiciones abruptas que podrían generar vibraciones o pérdida de precisión.
+
   
     <img src="Pos_S.png" alt="Pos" width="500">
 Figura 3. Perfil de Posición
 
 - Perfil de Aceleración:
-  - Perfil Lineal: La aceleración se presenta en forma de escalones o saltos repentinos. En cada etapa del movimientp (aceleración constante, velocidad constante, desaceleración), la aceleración cambia bruscamente de valor, lo que puede generar impactos al sistema.
+  - Se describe cómo la velocidad del sistema cambia con el tiempo. En una curva en S, la aceleración comienza desde cero, aumenta de manera progresiva hasta alcanzar un valor máximo y luego disminuye suavemente hasta llegar nuevamente a cero. Este comportamiento ayuda a evitar los picos de aceleración que pueden causar estrés o daños en los componentes mecánicos. La aceleración controlada es crucial para mantener la estabilidad dinámica y mejorar el rendimiento general del sistema de movimiento.
+    
+    - Perfil Lineal: La aceleración se presenta en forma de escalones o saltos repentinos. En cada etapa del movimientp (aceleración constante, velocidad constante, desaceleración), la aceleración cambia bruscamente de valor, lo que puede generar impactos al sistema.
 
-  - Perfil Curva en S: La aceleración es continua y suave. Está compuesta por tres fases: Pendiente positiva (incrementa la aceleración), constante, y una pendiente negativa (disminuye la aceleración). Este comportamiento se representa mediante funciones cuadráticas (segund orden), lo que hace que al derivar para obtener el Jeck sea lineal.
+    - Perfil Curva en S: La aceleración es continua y suave. Está compuesta por tres fases: Pendiente positiva (incrementa la aceleración), constante, y una pendiente negativa (disminuye la aceleración). Este comportamiento se representa mediante funciones cuadráticas (segund orden), lo que hace que al derivar para obtener el Jeck sea lineal.
   
     <img src="Pos_A.png" alt="Acel" width="500">
 Figura 4. Perfil de Aceleración
 
 
-- Perfil de Jeck: 
-  - Perfil Lineal: Se aprecian saltos abruptos, ya que la aceleración cambia de forma instantánea.
-  - Perfil Curva en S: Se observa una transición continua con cambios suaves.
+- Perfil de Jeck:
+
+  - El jerk es la tasa de cambio de la aceleración, o la derivada de la aceleración con respecto al tiempo. En los perfiles de curva en S, el jerk se mantiene continuo y limitado, lo que implica que los cambios en la aceleración son suaves y no generan fluctuaciones bruscas. Controlar el jerk es fundamental para evitar vibraciones indeseadas o daños mecánicos en los componentes, ya que los cambios rápidos de aceleración pueden generar picos de fuerza que afectan negativamente la precisión y la durabilidad del sistema. Un jerk controlado garantiza que el movimiento sea aún más suave y preciso
+    - Perfil Lineal: Se aprecian saltos abruptos, ya que la aceleración cambia de forma instantánea.
+    - Perfil Curva en S: Se observa una transición continua con cambios suaves.
     
      <img src="Pos_J.png" alt="Jec" width="500">
 Figura 4. Perfil de Jeck
@@ -161,19 +166,21 @@ $$s_{OC}(t) = 493.49 + 32 \cdot 70 = 2733.49 \text{ cts}$$
 
 # Movimiento Multieje
 
-Los sistemas que requieren el control simultáneo de múltiples ejes como manipuladores, los cuales utilizan perfiles de movimiento multi-eje. Este tipo de perfiles se basan en la coordinación precisa entre dos o más ejes (axis) para lograr un trayecto o acción específica de forma sincronizada.
+Los sistemas que requieren el control simultáneo de múltiples ejes como manipuladores, los cuales utilizan perfiles de movimiento multi-eje. Este tipo de perfiles se basan en la coordinación precisa entre dos o más ejes (axis) para lograr un trayecto o acción específica de forma sincronizada.  En estos sistemas, varios motores o actuadores trabajan juntos para mover un objeto o herramienta en varias direcciones simultáneamente, logrando trayectorias complejas y precisas.
 
 Se debe tener en cuenta los siguientes movimientos:
 
 ### Movimiento Secuencial:
-- Mueve un eje primero, seguido del otro. Es una forma simple pero lenta en dado caso de requerir una precisión conjunta.
+- El movimiento secuencial es ideal para aplicaciones que requieren un proceso ordenado y controlado de manera sencilla, sin necesidad de gestionar múltiples ejes en movimiento simultáneo. Esto lo hace más accesible y eficiente para tareas que no demandan alta complejidad dinámica.
+- En este enfoque, el movimiento de los ejes se realiza de forma sucesiva, comenzando con un eje y luego pasando al siguiente. Aunque esta metodología es simple, puede resultar más lenta en situaciones donde se requiere una precisión conjunta entre varios ejes.
+
 
 ### Movimiento Simultáneo:
-- Ambos ejes se activan al mismo tiempo, pero sin una sincronización total de velocidad o trayectoria.
+- El movimiento simultáneo se refiere al control y movimiento de múltiples ejes al mismo tiempo, coordinando su desplazamiento en una sola operación. A diferencia del movimiento secuencial, donde los ejes se mueven de manera individual y sucesiva, en el movimiento simultáneo, todos los ejes trabajan en conjunto, ejecutando su desplazamiento de manera sincronizada para lograr trayectorias complejas y precisas.
 
 ### Movimiento Interpolado:
-- Ambos ejes son controlados para iniciar y terminar exactamente al mismo tiempo, manteniendo una trayectoria precisa, como una línea recta en el espacio cartesiano.
-- Se puede usar una interpolación lineal o circular, dependiendo de la trayectoria deseada
+- El movimiento interpolado es un tipo de control que permite generar trayectorias complejas y suaves mediante la combinación continua del movimiento de varios ejes. A diferencia de los movimientos secuenciales o simultáneos, la interpolación busca garantizar un desplazamiento fluido y preciso entre puntos o trayectorias.
+- En este tipo de movimiento, ambos ejes son controlados para iniciar y finalizar su desplazamiento exactamente al mismo tiempo, manteniendo una trayectoria precisa, como una línea recta en el espacio cartesiano. Dependiendo de la trayectoria requerida, se puede utilizar interpolación lineal o circular, adaptándose a las necesidades específicas del movimiento.
 
 
 ## 💡Ejemplo 3
@@ -236,6 +243,8 @@ $${\color{Green} ty_{total} = 1.9 + 2t_{a} = 2.5s} $$
 
 - El uso de perfiles de movimiento optimizados, como la curva en S, combinado con controladores de movimiento avanzados, mejora significativamente el comportamiento dinámico de los sistemas mecánicos. Al lograr una aceleración progresiva y controlar con precisión los parámetros eléctricos del motor, se minimizan las vibraciones y se optimiza el rendimiento general. Esta sinergia entre perfilado de movimiento y control inteligente resulta fundamental para alcanzar altos niveles de precisión, eficiencia y confiabilidad en aplicaciones industriales y robóticas.
 
+- El perfil trapezoidal es más sencillo y eficiente en términos de cálculo, el perfil curva en S es superior cuando se busca optimizar el comportamiento dinámico del sistema, mejorar la precisión y aumentar la durabilidad de los componentes. La elección entre ambos perfiles dependerá de las necesidades específicas de la aplicación, como la complejidad del sistema, los requisitos de precisión y las limitaciones computacionales.
+-  
 # Referencias
 1.
 2. J. Neugebauer, "Perfiles de control de movimiento: bueno, mejor y óptimo," DigiKey, 24-mar-2021. [En línea]. Disponible en: https://www.digikey.com/es/blog/motion-control-profiles-good-better-and-best [Accedido: 01-abr-2025].
